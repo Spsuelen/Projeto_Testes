@@ -18,7 +18,7 @@ class Exports(BasePage):
 
     expenses_btn_exports = (By.ID,'com.blogspot.e_kanivets.moneytracker:id/btn_export')
 
-    expenses_btn_options = (By.XPATH, '//android.widget.TextView[@resource-id="android:id/text1" and @text="Google"]')
+    expenses_btn_options = (By.XPATH, '//*[@text="Gmail"]')
 
     def list_to_navigation(self):
         wait = WebDriverWait(self.driver, 30)

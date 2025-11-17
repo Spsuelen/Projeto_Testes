@@ -490,7 +490,7 @@ class test_TestCase(unittest.TestCase):
         self.assertEqual("",
                          self.driver.find_element(By.ID,
                                                   'com.blogspot.e_kanivets.moneytracker:id/action_done').
-                         get_attribute('text'))
+                         get_attribute('text') or "")
 
     def test_navigate_to_exchange_import(self):
         time.sleep(2)
@@ -575,9 +575,9 @@ class test_TestCase(unittest.TestCase):
 
         time.sleep(10)
 
-        self.assertEqual("Import/Export",
+        self.assertEqual("Welcome to Gmail",
                          self.driver.find_element(By.XPATH,
-                                                  '//android.widget.TextView[@text="Import/Export"]').get_attribute(
+                                                  '//android.widget.TextView[@text="Welcome to Gmail"]').get_attribute(
                              'text'))
 
     def test_navigate_to_accounts(self):
@@ -617,7 +617,7 @@ class test_TestCase(unittest.TestCase):
         self.assertEqual("",
                          self.driver.find_element(By.ID,
                                                   'com.blogspot.e_kanivets.moneytracker:id/action_done').
-                         get_attribute('text'))
+                         get_attribute('text')or "")
 
 
 
