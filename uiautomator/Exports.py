@@ -17,8 +17,6 @@ class Exports(BasePage):
 
     expenses_btn_exports = {'resourceId': 'com.blogspot.e_kanivets.moneytracker:id/btn_export'}
 
-    # LOCALIZADOR CORRETO PARA CLICAR NO ÍCONE DO GMAIL NA TELA DE COMPARTILHAMENTO
-    # Se o texto for 'Gmail' (como na Captura 175655.png):
     expenses_btn_options = {'text': 'Gmail'}
 
     def list_to_navigation(self):
@@ -38,5 +36,5 @@ class Exports(BasePage):
         self.device(**self.expenses_btn_exports).click(timeout=30.0)
 
     def list_to_options(self):
-        # Clica na opção de compartilhamento (Gmail)
+    
         self.device(**self.expenses_btn_options).click(timeout=50.0)
