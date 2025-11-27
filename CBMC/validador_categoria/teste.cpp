@@ -1,12 +1,8 @@
 #include <cctype>
 #include <assert.h>
-
 #define MAX_LEN 31 
-
 void __CPROVER_assume(int condition);
-
 using namespace std;
-
 bool validate_category(const char category[MAX_LEN], int len) {
     const char specials[] = "!@#$%^&*()_+=-[]{}|;:,.<>?/~`";
 

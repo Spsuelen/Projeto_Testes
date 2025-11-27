@@ -4,7 +4,7 @@
 
 void __CPROVER_assume(int condition);
 
-using namespace std;
+
 
 bool validate_consecutive_repeated(const char category[MAX_LEN], int len) {
     for (int i = 0; i < len - 1; i++) {

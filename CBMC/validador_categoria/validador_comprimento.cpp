@@ -1,11 +1,8 @@
-#include <cstdlib>
 #include <assert.h>
 
 #define MAX_LEN 31
 
 void __CPROVER_assume(int condition);
-
-using namespace std;
 
 bool validate_length(int len) {
     assert(len >= 3 && len <= 30);

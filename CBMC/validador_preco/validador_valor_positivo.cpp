@@ -1,11 +1,10 @@
-#include <cstdlib>
+
 #include <assert.h>
 
 #define MAX_PRICE_LEN 6
 
 void __CPROVER_assume(int condition);
 
-using namespace std;
 
 bool validate_positive_value(const char price[MAX_PRICE_LEN], int len) {
     double value = 0;

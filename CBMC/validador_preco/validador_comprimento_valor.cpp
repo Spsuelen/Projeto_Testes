@@ -2,9 +2,7 @@
 
 #define MAX_PRICE_LEN 6
 
-void __CPROVER_assume(int condition);
-
-using namespace std;
+void __CPROVER_assume(int condition); 
 
 bool validate_length(int len) {
     assert(len >= 1 && len <= 5);

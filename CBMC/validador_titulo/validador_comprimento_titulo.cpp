@@ -1,5 +1,4 @@
 #include <cctype>
-#include <cstdlib>
 #include <assert.h>
 
 #define MAX_PRICE_LEN 6

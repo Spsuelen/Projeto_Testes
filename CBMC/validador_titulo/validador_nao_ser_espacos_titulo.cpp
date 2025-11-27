@@ -5,7 +5,6 @@
 
 void __CPROVER_assume(int condition);
 
-using namespace std;
 
 bool validate_not_only_spaces(const char title[MAX_LEN_TITLE], int len) {
     bool only_spaces = true;
