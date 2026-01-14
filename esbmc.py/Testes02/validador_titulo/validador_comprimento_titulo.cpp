@@ -9,7 +9,8 @@ bool validate_length(int len) {
 
 int main() {
     int len;
-    __ESBMC_assume(len >= 1 && len <= 20);
+    __ESBMC_assert(len >= 1 && len <= 20, "Tamanho ou caracteres inválidos.");
+
 
     validate_length(len);
 
