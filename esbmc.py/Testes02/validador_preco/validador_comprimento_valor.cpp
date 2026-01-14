@@ -7,7 +7,7 @@ bool validate_length(int len) {
 
 int main() {
     int len;
-    __ESBMC_assume(len >= 1 && len <= 5);
+    __ESBMC_assert(len >= 1 && len <= 5, "Tamanho Incorreto.");
 
     validate_length(len);
 
