@@ -11,7 +11,7 @@ bool validate_length(int len) {
 
 int main() {
     int len;
-    __ESBMC_assume(len >= 3 && len <= 30);
+    __ESBMC_assert(len >= 3 && len <= 30, "A categoria deve ter entre 3 e 30 caracteres.");
 
     validate_length(len);
 
